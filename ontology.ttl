@@ -1,0 +1,626 @@
+@prefix : <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5#> .
+
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty ;
+            rdfs:subPropertyOf rdfs:comment .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/assignedToFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/assignedToFlight> rdf:type owl:ObjectProperty ;
+                                                                                          rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat> ;
+                                                                                          rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/booksFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/booksFlight> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/destinationForFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/destinationForFlight> rdf:type owl:ObjectProperty ;
+                                                                                              rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                              rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport> ;
+                                                                                              rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasAircraft
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasAircraft> rdf:type owl:ObjectProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                                                     rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasDestination
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasDestination> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                                                        rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/DestinationAIrport> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasOrigin
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasOrigin> rdf:type owl:ObjectProperty ;
+                                                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                                                   rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/OriginAirport> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/includesFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/includesFlight> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Trip> ;
+                                                                                        rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/offeredOnFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/offeredOnFlight> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/operatesFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/operatesFlight> rdf:type owl:ObjectProperty ;
+                                                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                        rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> ;
+                                                                                        rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/originForFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/originForFlight> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewsFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewsFlight> rdf:type owl:ObjectProperty ;
+                                                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> ;
+                                                                                       rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/usedInFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/usedInFlight> rdf:type owl:ObjectProperty ;
+                                                                                      rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> ;
+                                                                                      rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/worksForAirline
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/worksForAirline> rdf:type owl:ObjectProperty ;
+                                                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff> ;
+                                                                                         rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff> ;
+                      rdfs:range <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftCapacity
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftCapacity> rdf:type owl:DatatypeProperty ;
+                                                                                          rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                          rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftModel
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftModel> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftRegistration
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftRegistration> rdf:type owl:DatatypeProperty ;
+                                                                                              rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineCode
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineCode> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineName
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineName> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportCode
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportCode> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportLocation
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportLocation> rdf:type owl:DatatypeProperty ;
+                                                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                         rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/dateFlown
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/dateFlown> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/flightNumber
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/flightNumber> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/frequentFlyerNumber
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/frequentFlyerNumber> rdf:type owl:DatatypeProperty ;
+                                                                                             rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                             rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/headquarters
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/headquarters> rdf:type owl:DatatypeProperty ;
+                                                                                      rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                      rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/passengerType
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/passengerType> rdf:type owl:DatatypeProperty ;
+                                                                                       rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                       rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/rating
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/rating> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewBody
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewBody> rdf:type owl:DatatypeProperty ;
+                                                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                    rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewTitle
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewTitle> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/seatType
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/seatType> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/serviceType
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/serviceType> rdf:type owl:DatatypeProperty ;
+                                                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                     rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffId
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffId> rdf:type owl:DatatypeProperty ;
+                                                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                 rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffRole
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffRole> rdf:type owl:DatatypeProperty ;
+                                                                                   rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                   rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/status
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/status> rdf:type owl:DatatypeProperty ;
+                                                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/tripType
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/tripType> rdf:type owl:DatatypeProperty ;
+                                                                                  rdfs:subPropertyOf owl:topDataProperty ;
+                                                                                  rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Trip> .
+
+
+###  http://www.w3.org/2002/07/owl#topDataProperty
+owl:topDataProperty rdfs:domain <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> rdf:type owl:Class ;
+                                                                                  rdfs:comment "Represents an aircraft that is used by an airline for commercial flights." ;
+                                                                                  rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> rdf:type owl:Class ;
+                                                                                 rdfs:comment "Represents an airline, which is a company that provides air transport services for traveling passengers and freight." ;
+                                                                                 rdfs:label "Airline" ;
+                                                                                 rdfs:sameAs "http://dbpedia.org/resource/Airline" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport> rdf:type owl:Class ;
+                                                                                 rdfs:comment "A facility from which aircraft flights take off and land" ;
+                                                                                 rdfs:label "Airport" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/BadReview
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/BadReview> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CabinService
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CabinService> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service> ;
+                                                                                      rdfs:comment "CabinService" ,
+                                                                                                   "Type of Service" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CharterFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CharterFlight> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                                                       rdfs:comment "Type of Flight" ;
+                                                                                       rdfs:label "CharterFlight" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/DestinationAIrport
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/DestinationAIrport> rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FirstTimeFlyer
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FirstTimeFlyer> rdf:type owl:Class ;
+                                                                                        rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> ;
+                                                                                        rdfs:comment "Type of Passanger" ;
+                                                                                        rdfs:label "FirstTImeFLyer" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> rdf:type owl:Class ;
+                                                                                rdfs:comment "Represents a single flight from an origin to a destination on a specific aircraft" ;
+                                                                                rdfs:label "Flight" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FrequentFlyer
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FrequentFlyer> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> ;
+                                                                                       rdfs:comment "Type of FrequentFLyer" ;
+                                                                                       rdfs:label "FrequentFlyer" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GoodReview
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GoodReview> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GroundService
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GroundService> rdf:type owl:Class ;
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service> ;
+                                                                                       rdfs:comment "Type of service" ;
+                                                                                       rdfs:label "GroundService" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/LongFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/LongFlight> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/OriginAirport
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/OriginAirport> rdf:type owl:Class ;
+                                                                                       rdfs:comment "Origin AIrport" ;
+                                                                                       rdfs:label "OriginAirport" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger> rdf:type owl:Class ;
+                                                                                   rdfs:comment "Represents an individual who travels in an airplane." ;
+                                                                                   rdfs:label "Passenger" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/QatarAirways
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/QatarAirways> rdf:type owl:Class ;
+                                                                                      rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> ;
+                                                                                      rdfs:comment "Type of Airline" ;
+                                                                                      rdfs:label "Qatar Airways" ;
+                                                                                      rdfs:sameAs "http://dbpedia.org/resource/Qatar_Airways" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> rdf:type owl:Class ;
+                                                                                rdfs:comment "A written or spoken commentary highlighting the merits and faults of a flight" ;
+                                                                                rdfs:label "Review" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline> ;
+                                                                                 rdfs:comment "Type of airline" ;
+                                                                                 rdfs:label "Ryanair" ;
+                                                                                 rdfs:sameAs "http://dbpedia.org/resource/Ryanair" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ScheduledFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ScheduledFlight> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                                                         rdfs:comment "Type of Flight" ;
+                                                                                         rdfs:label "ScheduledFlight" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat> rdf:type owl:Class ;
+                                                                              rdfs:comment "Tipo de asiento (Economy, Business, First Class, etc.)." ;
+                                                                              rdfs:label "Seat" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service> rdf:type owl:Class ;
+                                                                                 rdfs:comment "A service provided by the airline, which can be either during the flight or on the ground" ;
+                                                                                 rdfs:label "Service" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ShortFlight
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ShortFlight> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff> rdf:type owl:Class ;
+                                                                               rdfs:comment "Represents an employee of an airline, such as a pilot, cabin crew member, or ground staff." ;
+                                                                               rdfs:label "Staff" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Trip
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Trip> rdf:type owl:Class ;
+                                                                              rdfs:comment "A journey made by a passenger, which can involve one or multiple flights." ;
+                                                                              rdfs:label "Trip" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5#found_the_cabin_staff_on_both_flights,_as_usual,_very_helpful
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5#found_the_cabin_staff_on_both_flights,_as_usual,_very_helpful> rdf:type owl:NamedIndividual ,
+                                                                                                                                                <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> ;
+                                                                                                                                       <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewsFlight> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342> ;
+                                                                                                                                       <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/rating> 8 ;
+                                                                                                                                       <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewBody> "foun\"found the cabin staff on both flights, as usual, very helpful\"" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-431
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-431> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/usedInFlight> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342> ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftCapacity> 32 ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftModel> 3298 .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-432
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-432> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/usedInFlight> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A23
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A23> rdf:type owl:NamedIndividual ;
+                                                                             <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasAircraft> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B737-800> ;
+                                                                             <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration> 1 .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Absolutely_terrible_experience
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Absolutely_terrible_experience> rdf:type owl:NamedIndividual ,
+                                                                                                                 <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Alfredo
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Alfredo> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FirstTimeFlyer> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B23
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B23> rdf:type owl:NamedIndividual ,
+                                                                                      <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat> ;
+                                                                             <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/assignedToFlight> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B737-800> ;
+                                                                             <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/seatType> "Economy Class" ;
+                                                                             rdfs:label "Seat" .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B737-800
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B737-800> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Boeing_737_900
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Boeing_737_900> rdf:type owl:NamedIndividual ,
+                                                                                                 <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/F-342
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/F-342> rdf:type owl:NamedIndividual ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasAircraft> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Boeing_737_900> ;
+                                                                               <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration> 8 .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342> rdf:type owl:NamedIndividual ,
+                                                                                              <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Julia
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Julia> rdf:type owl:NamedIndividual ,
+                                                                                        <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FrequentFlyer> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Qatar-1
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Qatar-1> rdf:type owl:NamedIndividual ,
+                                                                                          <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/QatarAirways> .
+
+
+###  http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair-1
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair-1> rdf:type owl:NamedIndividual ,
+                                                                                            <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair> .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Sets flight domai nto ShortFlight if duration is less or equal than 2" ;
+   rdfs:label "FlightShortRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 2 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ShortFlight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Sets Flight Domain to LongFlight if duration exceeds 5h" ;
+   rdfs:label "FlightDurationLongRule" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 5 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/LongFlight> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Sets Review domain to GoodReview if rating exceeds 7" ;
+   rdfs:label "GoodRating" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/rating> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/d> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 7 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GoodReview> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/f>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
