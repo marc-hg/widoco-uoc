@@ -1,0 +1,1328 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5"
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "91",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airport",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Airport",
+      "undefined" : "Airport"
+    },
+    "comment" : {
+      "undefined" : "A facility from which aircraft flights take off and land"
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FrequentFlyer",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FrequentFlyer",
+      "undefined" : "FrequentFlyer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Julia",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Julia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of FrequentFLyer"
+    },
+    "attributes" : [ "external" ],
+    "id" : "42",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "45",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Review",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Review",
+      "undefined" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5#found_the_cabin_staff_on_both_flights,_as_usual,_very_helpful",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "found_the_cabin_staff_on_both_flights,_as_usual,_very_helpful"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Absolutely_terrible_experience",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Absolutely_terrible_experience"
+      }
+    } ],
+    "subClasses" : [ "4", "64" ],
+    "comment" : {
+      "undefined" : "A written or spoken commentary highlighting the merits and faults of a flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GoodReview",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GoodReview"
+    },
+    "attributes" : [ "external" ],
+    "id" : "64",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Aircraft",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Boeing_737_900",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Boeing_737_900"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B737-800",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "B737-800"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-431",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "A-431"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/A-432",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "A-432"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Represents an aircraft that is used by an airline for commercial flights."
+    },
+    "attributes" : [ "external" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CharterFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CharterFlight",
+      "undefined" : "CharterFlight"
+    },
+    "comment" : {
+      "undefined" : "Type of Flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "18",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Service",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service",
+      "undefined" : "Service"
+    },
+    "subClasses" : [ "77", "78" ],
+    "comment" : {
+      "undefined" : "A service provided by the airline, which can be either during the flight or on the ground"
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/DestinationAIrport",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DestinationAIrport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/GroundService",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroundService",
+      "undefined" : "GroundService"
+    },
+    "comment" : {
+      "undefined" : "Type of service"
+    },
+    "attributes" : [ "external" ],
+    "id" : "78",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Airline",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Airline",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Airline",
+      "undefined" : "Airline"
+    },
+    "subClasses" : [ "37", "34" ],
+    "comment" : {
+      "undefined" : "Represents an airline, which is a company that provides air transport services for traveling passengers and freight."
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Flight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FLight-2342",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "FLight-2342"
+      }
+    } ],
+    "subClasses" : [ "41", "39", "18", "16" ],
+    "comment" : {
+      "undefined" : "Represents a single flight from an origin to a destination on a specific aircraft"
+    },
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ShortFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ShortFlight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/CabinService",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabinService"
+    },
+    "comment" : {
+      "undefined" : "CabinService"
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Trip",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Trip",
+      "undefined" : "Trip"
+    },
+    "comment" : {
+      "undefined" : "A journey made by a passenger, which can involve one or multiple flights."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/QatarAirways",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Qatar_Airways",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QatarAirways",
+      "undefined" : "Qatar Airways"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Qatar-1",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Qatar-1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of Airline"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/ScheduledFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScheduledFlight",
+      "undefined" : "ScheduledFlight"
+    },
+    "comment" : {
+      "undefined" : "Type of Flight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "39",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/BadReview",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BadReview"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Seat",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Seat",
+      "undefined" : "Seat"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/B23",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "B23",
+        "undefined" : "Seat"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Tipo de asiento (Economy, Business, First Class, etc.)."
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "91",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/resource/Ryanair",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Ryanair",
+      "undefined" : "Ryanair"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Ryanair-1",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Ryanair-1"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of airline"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37",
+    "superClasses" : [ "31" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/OriginAirport",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OriginAirport",
+      "undefined" : "OriginAirport"
+    },
+    "comment" : {
+      "undefined" : "Origin AIrport"
+    },
+    "attributes" : [ "external" ],
+    "id" : "35"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/FirstTimeFlyer",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FirstTimeFlyer",
+      "undefined" : "FirstTImeFLyer"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Alfredo",
+      "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+      "labels" : {
+        "IRI-based" : "Alfredo"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Type of Passanger"
+    },
+    "attributes" : [ "external" ],
+    "id" : "82",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/LongFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LongFlight"
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Staff",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Staff",
+      "undefined" : "Staff"
+    },
+    "comment" : {
+      "undefined" : "Represents an employee of an airline, such as a pilot, cabin crew member, or ground staff."
+    },
+    "attributes" : [ "external" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/Passenger",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Passenger",
+      "undefined" : "Passenger"
+    },
+    "subClasses" : [ "42", "82" ],
+    "comment" : {
+      "undefined" : "Represents an individual who travels in an airplane."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/rating",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "rating"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/booksFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "booksFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "6",
+    "attributes" : [ "external", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/serviceType",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "serviceType"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/usedInFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "usedInFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "14",
+    "attributes" : [ "external", "object" ],
+    "id" : "13"
+  }, {
+    "range" : "7",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "7",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "19",
+    "subproperty" : [ "13", "20", "21", "22", "23", "24", "5", "25", "26", "27", "28", "29" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/headquarters",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "headquarters"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "30"
+  }, {
+    "range" : "31",
+    "domain" : "34",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasOrigin",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasOrigin"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "31",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "7",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "7",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/includesFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "includesFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "43",
+    "attributes" : [ "external", "object" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/flightNumber",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "flightNumber"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/operatesFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "operatesFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "31",
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffRole",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "staffRole"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasDestination",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasDestination"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewTitle",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "reviewTitle"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/duration",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "duration"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportLocation",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "46",
+    "label" : {
+      "IRI-based" : "airportLocation"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/frequentFlyerNumber",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "frequentFlyerNumber"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineName",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "airlineName"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/worksForAirline",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "worksForAirline"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "19",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/staffId",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "staffId"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airportCode",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "airportCode"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/seatType",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "seatType"
+    },
+    "domain" : "74",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewBody",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "reviewBody"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/originForFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "originForFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/tripType",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "tripType"
+    },
+    "domain" : "43",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "80"
+  }, {
+    "range" : "6",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/hasAircraft",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasAircraft"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "11",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/reviewsFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "reviewsFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "1",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "6",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "11",
+    "domain" : "78",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftModel",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "aircraftModel"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftRegistration",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "aircraftRegistration"
+    },
+    "domain" : "91",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/status",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "status"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/airlineCode",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "airlineCode"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/assignedToFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "assignedToFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "74",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/dateFlown",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "dateFlown"
+    },
+    "domain" : "7",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/destinationForFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "destinationForFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "9",
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/aircraftCapacity",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "aircraftCapacity"
+    },
+    "domain" : "14",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/passengerType",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "passengerType"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5/offeredOnFlight",
+    "baseIri" : "http://www.semanticweb.org/vifri/ontologies/2024/3/untitled-ontology-5",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "offeredOnFlight"
+    },
+    "superproperty" : [ "8" ],
+    "domain" : "11",
+    "attributes" : [ "external", "object" ],
+    "id" : "29"
+  } ]
+}
